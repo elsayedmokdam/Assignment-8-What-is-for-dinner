@@ -841,9 +841,12 @@ var recipes = [
     message: false,
   },
 ];
+
+replaceRecipe();
+
 // Function To Get Random Recipe
 function getRandomRecipe() {
-  return recipes[Math.floor(Math.random() * recipes.length)];
+  return recipes[Math.floor(Math.random() * recipes.length)]; 
 }
 // Function To Get Recipe Ingredients
 function getRecipeIngredients(recipe) {
@@ -960,7 +963,7 @@ function checkMessage(recipe) {
     return "";
   }
 }
-// Function To Replace Recipe (Main Function)
+// Function To Replace Recipe
 function replaceRecipe() {
   var recipe = getRandomRecipe();
   // Catch ingredients
